@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-navy-light: #2c384d;
+  --color-navy: #1a2332;
+  --color-navy-dark: #0e1622;
+  --color-gold: #c9a961;
+  --color-gold-light: #e5cd9c;
+  --color-gold-dark: #a98845;
+  --color-charcoal: #1f2937;
+}
+
+/* Global improvements */
+body {
+  font-family: var(--font-sans);
+  background-color: #fdfcf9;
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for CRM and content tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0e1622;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a961;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e5cd9c;
+}
+
+.font-editorial-serif {
+  font-family: var(--font-serif);
+}
+
+.shadow-gold-subtle {
+  box-shadow: 0 4px 20px -2px rgba(201, 169, 97, 0.15);
+}
+
+.shadow-gold-hover {
+  box-shadow: 0 10px 30px -5px rgba(201, 169, 97, 0.25);
+}
+
